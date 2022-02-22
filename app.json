@@ -1,0 +1,51 @@
+{
+  "name": "Encoder Bot",
+  "description": "At Alpha Stage Need more Contribution",
+  "logo": "https://telegra.ph/FileCompressorBot-10-06",
+  "keywords": [
+    "telegram",
+    "best",
+    "video",
+    "encoder",
+    "bot"
+  ],
+  "success_url": "/",
+  "website": "https://github.com/HeimanPictures/HeimanPictures",
+  "repository": "https://github.com/HeimanPictures/video-encoder-bot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org or @usetgxbot",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org or @usetgxbot",
+      "value": ""
+    },
+    "SUDO_USERS": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": "1478534845"
+    },
+    "DOWNLOAD_DIR": {
+      "description": "Don't Change",
+      "value": "downloads/"
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
+}
