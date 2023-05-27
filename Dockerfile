@@ -6,10 +6,10 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the bot folder
-COPY bot /bot
+COPY bot
 
 # Set the working directory
-WORKDIR /bot
+WORKDIR bot
 
 # Copy the requirements file
 COPY requirements.txt .
